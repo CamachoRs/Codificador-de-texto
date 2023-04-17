@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrador de texto</title>
+    <link rel="stylesheet" href="Css/index.css">
+</head>
+<body>
+    <header>
+        <img src="Img/Logo.svg" alt="Logo de alura">
+    </header>
+    <main>
+        <section class="section-1">
+            <textarea id="textarea" cols="35%" rows="10%" placeholder=" Ingrese el texto aqui..."></textarea>
+            <p>
+                <img src="Img/Vector.svg" alt="Signo de exclamacion"> Solo letras minúsculas y sin acentos.
+            </p>
+            <div>
+                <button class="encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="mostrar">
+            <div class="no-mensaje" id="no-mensaje">
+                <img src="Img/Persona.svg" alt="Persona buscando el mensaje">
+                <p><strong>Ningún mensaje fue encontrado</strong></p>
+                <p class="mensaje">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="si-mensaje" id="si-mensaje">
+                <textarea id="mostrar-mensaje" cols="25%" rows="14%" readonly="readonly"></textarea>
+                <button id="copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="Js/Index.js"></script>
+</body>
+</html>
