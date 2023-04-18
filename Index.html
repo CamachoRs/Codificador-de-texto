@@ -13,9 +13,9 @@
     </header>
     <main>
         <section class="section-1">
-            <textarea id="textarea" cols="35%" rows="10%" placeholder=" Ingrese el texto aqui..."></textarea>
+            <textarea id="textarea" cols="35%" rows="10%" placeholder=" Ingrese el texto aquí..."></textarea>
             <p>
-                <img src="Img/Vector.svg" alt="Signo de exclamacion"> Solo letras minúsculas y sin acentos.
+                <img src="Img/Vector.svg" alt="Signo de exclamación"> Solo letras minúsculas y sin acentos.
             </p>
             <div>
                 <button class="encriptar" onclick="encriptar()">Encriptar</button>
@@ -24,17 +24,16 @@
         </section>
         <section class="mostrar">
             <div class="no-mensaje" id="no-mensaje">
-                <img src="Img/Persona.svg" alt="Persona buscando el mensaje">
+                <img class="persona" src="Img/Persona.svg" alt="Persona buscando el mensaje">
                 <p><strong>Ningún mensaje fue encontrado</strong></p>
                 <p class="mensaje">Ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
             <div class="si-mensaje" id="si-mensaje">
-                <textarea id="mostrar-mensaje" cols="25%" rows="14%" readonly="readonly"></textarea>
+                <textarea class="mostrar-mensaje" id="mostrar-mensaje" cols="25%" rows="14%" readonly="readonly"></textarea>
                 <button id="copiar" onclick="copiar()">Copiar</button>
             </div>
         </section>
     </main>
-    <footer></footer>
     <script src="Js/Index.js"></script>
 </body>
 </html>
